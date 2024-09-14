@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="../ProyectoGrupalCilsa/static/img/LogoMissty.png" alt="Bootstrap" width="35" height="30">
+                <img src="../static/img/LogoMissty.png" alt="Bootstrap" width="35" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
                     </li>
                     <span class="navbar-text">|</span>
                     <li class="nav-item">
-                        <a class="nav-link" href="../productos.html">Productos</a>
+                        <a class="nav-link" href="./templates/categorias.html">Productos</a>
                     </li>
                 </ul>
             </div>
@@ -50,44 +50,75 @@
     <!-- Productos destacados -->
     <div class="container mt-4">
         <h2 class="text-center">Productos Destacados</h2>
-        <div class="row mt-4">
+        <div class="row mt-4 justify-content-around">
             <!-- Producto 1 -->
-            <div class="col-md-4 mb-3">
+            <div class="col-md-6 col-lg-5 mb-4">
                 <div class="card">
-                    <img src="../ProyectoGrupalCilsa/static/img/Mom-azul.jpeg" class="card-img-top" alt="Mom Azul">
+                    <img src="./static/img/WideLegCargo-nevado.jpeg" class="card-img" alt="Cargo nevado">
                     <div class="card-body">
-                        <h5 class="card-title">Mom</h5>
-                        <p class="card-text">Mom-azul</p>
-                        <a href="../ProyectoGrupalCilsa/templates/Mom-azul.html" class="btn btn-primary">Ver detalles</a>
+                        <h5 class="card-title">Cargo nevado  <span class="badge rounded-pill text-bg-primary fs-6">Nuevo</span></h5>
+                        <p class="card-text">$ 15.000</p>
+                        <a href="./templates/cargo-nevado.html" class="btn btn-primary">Ver detalles</a>
                     </div>
                 </div>
             </div>
 
             <!-- Producto 2 -->
-            <div class="col-md-4 mb-3">
+            <div class="col-md-6 col-lg-5 mb-4">
                 <div class="card">
-                    <img src="../ProyectoGrupalCilsa/static/img/Mom-oxido.jpeg" class="card-img-top" alt="Mom Oxido">
+                    <img src="./static/img/WideLeg-azulOxidoConTajo.jpeg" class="card-img" alt="Mom Oxido">
                     <div class="card-body">
-                        <h5 class="card-title">Mom</h5>
-                        <p class="card-text">Mom-oxido</p>
-                        <a href="../ProyectoGrupalCilsa/templates/mom-oxido.html" class="btn btn-primary">Ver detalles</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Producto 3 -->
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="../ProyectoGrupalCilsa/static/img/WideLeg-celeste.jpeg" class="card-img-top" alt="WideLeg Celeste">
-                    <div class="card-body">
-                        <h5 class="card-title">WideLeg</h5>
-                        <p class="card-text">WideLeg-celeste</p>
-                        <a href="../ProyectoGrupalCilsa/templates/wide-leg-celeste.html" class="btn btn-primary">Ver detalles</a>
+                        <h5 class="card-title">Wide-leg con tajo  <span class="badge rounded-pill text-bg-primary fs-6">Nuevo</span></h5>
+                        <p class="card-text">$ 15.000</p>
+                        <a href="./templates/wide-leg-tajo.html" class="btn btn-primary">Ver detalles</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Productos en oferta -->
+    <div class="container mt-4">
+        <h2 class="text-center">Productos en oferta</h2>
+        <div class="row mt-4">
+            <!-- Producto 1 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="./static/img/Mom-oxido.jpeg" class="card-img" alt="Mom Oxido">
+                    <div class="card-body">
+                        <h5 class="card-title">Mom Oxido  <span class="badge rounded-pill text-bg-warning fs-6">Poco stock</span></h5>
+                        <p class="card-text">$ 13.000</p>
+                        <a href="../templates/Mom-azul.html" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="./static/img/WideLeg-oxido.jpeg" class="card-img" alt="Wide leg oxido">
+                    <div class="card-body">
+                        <h5 class="card-title">Wide-leg oxido   <span class="badge rounded-pill text-bg-warning fs-6">Poco stock</span></h5>
+                        <p class="card-text">$ 14.000</p>
+                        <a href="../templates/mom-oxido.html" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="./static/img/Mom-azul.jpeg" class="card-img" alt="Mom azul">
+                    <div class="card-body">
+                        <h5 class="card-title">Mom azul</h5>
+                        <p class="card-text">$ 13.000</p>
+                        <a href="../templates/wide-leg-celeste.html" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Footer -->
     <footer class="bg-dark text-center text-white mt-5 p-4">
