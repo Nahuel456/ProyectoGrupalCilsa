@@ -80,6 +80,7 @@ if (id) {
         if (e.id == id) {
 
             document.getElementById("url-image").src = e.url_image;
+            document.getElementById("url-image").alt = e.url_image;
             document.getElementById("name").innerHTML = e.name;
             if (e.message) {
                 document.getElementById("name").innerHTML += e.message;
